@@ -108,6 +108,62 @@
           <textarea class="b-none p-10 rad-5 d-block w-full close-message" placeholder="Close Message Content"></textarea>
         </div>
         <!-- End Settings  Box -->
+        <!-- Start General Info Widget -->
+        <div class="p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">General Info</h2>
+          <p class="mt-0 mb-20 c-grey fs-15">General Information About Your Account</p>
+          <div class="mb-15">
+            <label for="first" class="fs-14 c-grey d-block mb-10">First Name</label>
+            <input class="b-none border-ccc p-10 rad-5 d-block w-full" type="text" placeholder="First Name" id="first">
+          </div>
+          <div class="mb-15">
+            <label for="last" class="fs-14 c-grey d-block mb-10">Last Name</label>
+            <input class="b-none border-ccc p-10 rad-5 d-block w-full" type="text" placeholder="Lassst Name" id="last">
+          </div>
+          <div>
+            <label for="email" class="fs-14 c-grey d-block mb-10">Email</label>
+            <input class="b-none border-ccc p-10 rad-5 d-block w-full email" type="text" placeholder="o@nn.sa" id="email" disabled>
+            <a href="#" class="c-blue pl-10">Change</a>
+          </div>
+        </div>
+        <!-- End General Info Widget -->
+        <!-- Start Security Info Widget -->
+        <div class="p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">Security Info</h2>
+          <p class="mt-0 mb-20 c-grey fs-15">Security Information About Your Account</p>
+          <div class="mb-15 between-flex sec-box">
+            <div>
+              <span>Password</span>
+              <p class="c-grey mt-5 fs-13">Last Change On 25/10/2021</p>
+            </div>
+            <div>
+              <a href="#" class="bg-blue c-white btn-shape button">Change</a>
+            </div>
+          </div>
+          <div class="mb-15 between-flex sec-box">
+            <div>
+              <span>Two-Factor Authentication</span>
+              <p class="c-grey mt-5 fs-13">Enable/Disable The Feature</p>
+            </div>
+            <div>
+              <label>
+                <!-- If You Use For in Label Only it Wont Work -->
+                <input class="toggle-checkbox" type="checkbox" checked>
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+          </div>
+          <div class="mb-15 between-flex sec-box">
+            <div>
+              <span>Devices</span>
+              <p class="c-grey mt-5 fs-13">Check The Login Devices List</p>
+            </div>
+            <div>
+              <a href="#" class="bg-eee c-black btn-shape">Devices</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Security Info Widget -->
       </div>
     </div>
   </div>

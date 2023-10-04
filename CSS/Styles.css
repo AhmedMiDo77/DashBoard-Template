@@ -574,10 +574,16 @@ a {
     gap: 10px;
   }
 }
+.settings-page .email {
+  display: inline-block;
+  width: calc(100% - 80px);
+}
 /* If You Will Use The toggle button in different Pages So Its better to not link it with Setting page class */
 /* But if you know its only for this page u can use the class */
 .toggle-checkbox {
   appearance: none;
+  /* There Some Space For Toggle So You Will See At the end Of The Dev Vertically So Its Better To Use Display none Directly*/
+  display: none;
 }
 .toggle-switch {
   background-color: #ccc;
@@ -597,8 +603,11 @@ a {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  /* 24 height circle height and 4 more top 4 more left total 32 as the element height */
+  /* The Circle Height Is 24px and we added top 4 and 4 bottom total 32px its Half 16 so border radius should be 16px */
+  /* if you want to change the height of then u will change the circle height */
   top: 4px;
+  /* The Width Of Toggle Switch 78px - 24px (circle width) So Circle Width 24 And Left 50px Total 74px So There Free 4px its the 4px at the right */
+  /* if you change width from 78 to 98 all u will do go to the left and make it 70px when checked */
   left: 4px;
   /* Centering the X */
   display: flex;
