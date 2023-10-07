@@ -556,7 +556,7 @@ a {
   font-size: 13px;
 }
 /* End Project Table */
-/* Start Settings */
+/* Start Settings Page*/
 .settings-page {
   grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
 }
@@ -577,6 +577,39 @@ a {
 .settings-page .email {
   display: inline-block;
   width: calc(100% - 80px);
+}
+.settings-page .sec-box {
+padding-bottom: 15px;
+}
+.settings-page .sec-box:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.settings-page .sec-box .button {
+  transition: 0.3s;
+}
+.settings-page .sec-box .button:hover {
+  background-color: var(--blue-alt-color);
+}
+.settings-page .social-boxes i {
+  width: 40px;
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  transition: 0.3s;
+}
+.settings-page .social-boxes input {
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  border-radius: 0 5px 5px 0;
+} 
+/* focus-within when you make focus on this element you can control its parent by it*/
+/* Now you will apply changes to icon and control parent div */
+.settings-page .social-boxes > div:focus-within i {
+  color: black;
 }
 /* If You Will Use The toggle button in different Pages So Its better to not link it with Setting page class */
 /* But if you know its only for this page u can use the class */
@@ -625,7 +658,12 @@ a {
   left: 50px;
   color: var(--blue-color);
 }
-/* End Settings */
+.settings-page :disabled {
+  cursor: no-drop;
+  background-color: #f0f4f8;
+  color: #bbb;
+}
+/* End Settings Page */
 
 /* Start Animation */
   /* You Can Put Animation Codes Here */
