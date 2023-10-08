@@ -611,6 +611,54 @@ padding-bottom: 15px;
 .settings-page .social-boxes > div:focus-within i {
   color: black;
 }
+.widgets-control .control input[type="checkbox"] {
+  appearance: none;
+  display: none;
+}
+.widgets-control .control label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.widgets-control .control label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  border: 2px solid black;
+  border-radius: 5px;
+  /* before height is 18 so its half to center it*/
+  margin-top: -9px;
+}
+.widgets-control .control label:hover::before {
+  border-color: var(--blue-alt-color);
+}
+.widgets-control .control label::after {
+  font-family: "font awesome 6 free";
+  content: "\f00c";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+  background-color: blue;
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* To Hide The Element */
+  transform: scale(0) rotate(360deg);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.widgets-control .control input[type="checkbox"]:checked + label::after {
+  transform: scale(1);
+}
 /* If You Will Use The toggle button in different Pages So Its better to not link it with Setting page class */
 /* But if you know its only for this page u can use the class */
 .toggle-checkbox {
