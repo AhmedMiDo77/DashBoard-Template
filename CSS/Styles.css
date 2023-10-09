@@ -661,7 +661,6 @@ padding-bottom: 15px;
 }
 .backup-control input[type="radio"] {
   appearance: none;
-  display: none;
 }
 .backup-control .date label {
   padding-left: 30px;
