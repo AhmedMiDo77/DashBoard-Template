@@ -662,6 +662,12 @@ padding-bottom: 15px;
 .backup-control input[type="radio"] {
   appearance: none;
 }
+.backup-control input[type="radio"]:nth-child(3) {
+  margin-left: 5px;
+}
+.backup-control input[type="radio"]:nth-child(5) {
+  margin-right: 5px;
+}
 .backup-control .date label {
   padding-left: 30px;
   cursor: pointer;
