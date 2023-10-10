@@ -777,7 +777,41 @@ padding-bottom: 15px;
   color: #bbb;
 }
 /* End Settings Page */
-
+/* Start Profile Page */
+@media (max-width:768px) {
+  .profile-page .overview {
+    flex-direction: column;
+  }
+}
+.profile-page .avatar-box {
+  width: 300px;
+}
+@media (min-width:768px) {
+  .profile-page .avatar-box {
+    border-right: 1px solid #eee;
+  }
+}
+.profile-page .avatar-box > img {
+  width: 120px;
+  height: 120px;
+}
+.profile-page .avatar-box .level {
+  height: 5px;
+  /* For Border Radius */
+  overflow: hidden;
+  /* Center The Progress */
+  margin: auto;
+  width: 70px;
+}
+.profile-page .avatar-box .level span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--blue-color);
+  border-radius: 5px;
+}
+/* End Profile Page */
 /* Start Animation */
   /* You Can Put Animation Codes Here */
 /* End Animation */
