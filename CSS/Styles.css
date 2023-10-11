@@ -811,6 +811,50 @@ padding-bottom: 15px;
   background-color: var(--blue-color);
   border-radius: 5px;
 }
+/* We Made The Header Width Full To Stay Above it */
+.profile-page .info .box {
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+  transition: 0.3s;
+}
+@media (max-width:768px) {
+  .profile-page .info .box {
+    text-align: center;
+  }
+}
+.profile-page .info .box:hover {
+  background-color: #f9f9f9;
+}
+/* You Also Can Do Media min 768px */
+.profile-page .info .box > div {
+  min-width: 250px;
+  padding: 10px 0 0;
+  flex: 1;
+}
+@media (max-width:768px) {
+  .profile-page .info .box > div {
+    width: 100%;
+  }
+}
+.profile-page .info .box h4 {
+  font-weight: normal;
+}
+.profile-page .info .toggle-switch {
+  height: 20px;
+}
+@media (max-width:768px) {
+  .profile-page .info .toggle-switch {
+    margin: auto;
+  }
+}
+.profile-page .info .toggle-switch::before {
+  width: 12px;
+  height: 12px;
+  font-size: 8px;
+}
+.profile-page .info .toggle-checkbox:checked + .toggle-switch::before {
+  left: 62px;
+}
 /* End Profile Page */
 /* Start Animation */
   /* You Can Put Animation Codes Here */
