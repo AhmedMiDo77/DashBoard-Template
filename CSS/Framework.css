@@ -218,11 +218,17 @@
 }
 /* End Media Modules */
 /* Start Demnisions Modules */
+.w-100 {
+  width: 100px;
+}
 .w-full {
   width: 100%;
 }
 .w-fit {
   width: fit-content;
+}
+.h-100 {
+  height: 100px;
 }
 .h-full {
   height: 100%;
