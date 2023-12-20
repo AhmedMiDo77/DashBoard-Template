@@ -185,6 +185,7 @@ a {
 }
 /* End Wrapper */
 /* Start Welcome Widget */
+/* You used radious on parent then full width bg-eee after it so u want to hide overflow of the bg */
   .welcome {
     /* To Take its border radious */
     overflow: hidden;

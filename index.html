@@ -23,6 +23,7 @@
       <ul>
         <!-- Class fa-fw to fix the width to make all icons same width -->
         <li>
+          <!-- anchor so it wont be full width so we need to change display to get full width cuz its inline -->
           <a class="active d-flex align-center fs-14 c-black rad-5 p-10" href="index.html"><i class="fa-solid fa-chart-simple fa-fw"></i>
           <span>Dashboard</span>
           </a>
@@ -73,6 +74,7 @@
           </form>
         </div>
         <div class="icons d-flex align-center">
+          <!-- Used Span Cuz U Can't use Pseudo class On icons or Inputs or images -->
           <span class="notification p-relative">
             <i class="fa-solid fa-bell fa-lg"></i>
           </span>
@@ -93,6 +95,7 @@
             <img src="Images/welcome.png" alt="" class="hide-mobile">
           </div>
           <img src="Images/avatar.png" alt="" class="avatar">
+          <!-- d-flex will make the div not full width so give it a grow -->
           <div class="body txt-c d-flex p-20 mt-20 mb-20 block-mobile">
             <div>Ahmed MiDo <span class="d-block c-grey fs-14 mt-10">Developer</span></div>
             <div>80 <span class="d-block c-grey fs-14 mt-10">Projects</span></div>
